@@ -19,6 +19,8 @@
   /**
    * colors
    */
+   --active-link-color: #ff5722;
+
 
   --white: hsla(0, 0%, 100%, 1);
   --white_a8: hsla(0, 0%, 100%, 0.08);
@@ -304,6 +306,10 @@ body.nav-active { overflow: hidden; }
 .navbar.active {
   visibility: visible;
   transform: translateX(300px);
+}
+
+.navbar-link.active {
+  color: var(--active-link-color);
 }
 
 .navbar-top {
