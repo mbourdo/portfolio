@@ -728,7 +728,8 @@ textarea.input-field {
   .navbar-list {
     display: flex;
     gap: 36px;
-    margin-inline: auto;
+    margin-left: auto;
+    align-items: center;
   }
 
   .navbar-link {
