@@ -528,6 +528,23 @@ body.nav-active { overflow: hidden; }
 .work-card .btn-text:is(:hover, :focus-visible) { gap: 10px; }
 
 
+.btn-text-work {
+  padding-bottom: 20px;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: var(--fw-700);
+  transition: var(--transition-1);
+}
+
+.btn-primary:is(:hover, :focus-visible) {
+  gap: 10px;
+}
+
+
 /*-----------------------------------*\
   #RESUME
 \*-----------------------------------*/
