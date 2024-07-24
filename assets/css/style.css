@@ -419,16 +419,22 @@ body.nav-active { overflow: hidden; }
 /*-----------------------------------*\
   #PROJECT
 \*-----------------------------------*/
-.project { border-block: 1px solid var(--cadet-blue-crayola_a20); }
+.project {
+  border-block: 1px solid var(--cadet-blue-crayola_a20);
+}
 
-.project .title-wrapper { margin-block-end: 40px; }
+.project .title-wrapper {
+  margin-block-end: 40px;
+}
 
-.project .btn { margin-block-start: 24px; }
+.project .btn {
+  margin-block-start: 24px;
+}
 
-.project .grid-list { 
-  display: grid; 
-  grid-template-columns: repeat(2, 1fr); 
-  gap: 40px; 
+.project .grid-list {
+  display: grid;
+  grid-template-columns: 1fr; /* Mobile-first: single column */
+  gap: 40px;
 }
 
 .project-card-wrapper {
@@ -451,9 +457,13 @@ body.nav-active { overflow: hidden; }
   text-transform: uppercase;
 }
 
-.project-card .card-title { margin-block: 16px; }
+.project-card .card-title {
+  margin-block: 16px;
+}
 
-.project-card .card-text { margin-block-end: 10px; }
+.project-card .card-text {
+  margin-block-end: 20px;
+}
 
 .project-card .btn-text {
   display: flex;
@@ -463,7 +473,10 @@ body.nav-active { overflow: hidden; }
   transition: var(--transition-1);
 }
 
-.project-card .btn-text:is(:hover, :focus-visible) { gap: 10px; }
+.project-card .btn-text:is(:hover, :focus-visible) {
+  gap: 10px;
+}
+
 
 /*-----------------------------------*\
   #WORK
@@ -579,6 +592,11 @@ body.nav-active { overflow: hidden; }
     gap: 30px;
   }
 
+  .project .grid-list {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for tablets and up */
+    row-gap: 50px;
+  }
+
   .project .btn { min-width: max-content; }
 
   /* CONTACT */
@@ -678,11 +696,6 @@ body.nav-active { overflow: hidden; }
   .about .grid-list { grid-template-columns: repeat(4, 1fr); }
 
   /* PROJECT */
-  .project .grid-list {
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 50px;
-  }
-
   .project-card-1,
   .project-card-2,
   .project-card-3,
@@ -701,6 +714,7 @@ body.nav-active { overflow: hidden; }
   .project-card-2 .card-content {
     padding-block-end: var(--padding);
   }
+
 
   /* WORK */
   .work .grid-list {
