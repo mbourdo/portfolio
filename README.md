@@ -8,8 +8,7 @@ Clone the repo to your local machine:
 ```bash
 $ git clone https://github.com/mbourdo/portfolio.git
 ```
-Install node.js: <br/>
-Node.js:
+Install Node.js:
 ```bash
 $ npm install -g npm
 ```
