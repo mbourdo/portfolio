@@ -484,9 +484,7 @@ body.nav-active { overflow: hidden; }
 .job .content-wrapper {
   flex-direction: column;
 }
-.job .content-wrapper.reverse {
-  flex-direction: column;
-}
+
 .image img {
   max-width: 80%; /* Ensure images are not too large */
   height: 80%;
@@ -707,14 +705,11 @@ body.nav-active { overflow: hidden; }
   .job .content-wrapper {
     display: flex;
     align-items: center;
-    gap: 20px; /* Adjust the gap between text and image */
+    gap: 40px; /* gap between text and image */
     padding: var(--padding);
     margin: 20px;
     flex-direction: row;
   }
-  .job .content-wrapper.reverse {
-    flex-direction: row-reverse;
-  } 
   .job .text {
     flex: 1;
   }
@@ -722,10 +717,11 @@ body.nav-active { overflow: hidden; }
     flex: 1;
   }
   .job .image img {
-    width: 60%;
+    width: 100%;
     height: auto;
-    object-fit: cover; /* Adjust image fit as needed */
+    object-fit: cover; 
   }
+
 
   /* RESUME DESKTOP*/
   .pdf-container {
