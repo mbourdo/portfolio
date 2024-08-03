@@ -701,6 +701,7 @@ body.nav-active { overflow: hidden; }
   .fun .card-title{
     color: var(--slate-blue);
   }
+
   /* JOB DESKTOP*/
   .job .content-wrapper {
     display: flex;
