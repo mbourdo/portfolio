@@ -436,47 +436,22 @@ body.nav-active { overflow: hidden; }
 /*-----------------------------------*\
   #FUN PHONE
 \*-----------------------------------*/
-.fun { border-block: 1px solid var(--cadet-blue-crayola_a20); }
-.fun .title-wrapper { margin-block-end: 40px; }
-.fun .btn { margin-block-start: 24px; }
-.fun .grid-list { 
-  display: grid; 
-  grid-template-columns: 1fr; 
-  gap: 40px; 
+.fun-item {
+  background-color: var(--cultured);
+  padding: 20px;
+  grid-template-columns: 1fr;
+  box-sizing: border-box;
+  border-radius: 10px; 
 }
-.fun-card-wrapper {
-  grid-column: span 1;
+.fun .image-row {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-direction: column; /* 1 image per column mobile */
 }
-.fun-card {
-  --padding: 24px;
-  display: flex;
-  flex-direction: column;
-  gap: var(--padding);
-  border-radius: var(--radius-8);
-  overflow: hidden;
-  padding: var(--padding);
-}
-.fun-card .card-tag {
-  font-size: var(--fs-8);
-  font-weight: var(--fw-700);
-  text-transform: uppercase;
-}
-.fun-card .card-text { margin-block-end: 20px; }
-.fun-card .btn-text {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-weight: var(--fw-700);
-  transition: var(--transition-1);
-}
-.fun-card .btn-text:is(:hover, :focus-visible) { gap: 10px; }
-.fun-card .card-banner {
-  display: flex;
-  flex-direction: column;
-  gap: 10px; /* Add some space between images */
-}
-.fun .card-title{
-  color: var(--slate-blue);
+.fun-image {
+    width: 80%;
+    height: auto;
 }
 /*-----------------------------------*\
   #JOB PHONE
@@ -676,31 +651,40 @@ body.nav-active { overflow: hidden; }
   }
 
   /* FUN DESKTOP*/
+  .fun .title-wrapper{
+    padding-top: 60px;
+  }
   .fun .grid-list {
     grid-template-columns: 1fr;
-    row-gap: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
-  .fun-card-1,
-  .fun-card-2,
-  .fun-card-3,
-  .fun-card-4 {
-    flex-direction: row;
-    align-items: flex-end;
+  .fun-item {
+    background-color: var(--cultured);
+    padding: 20px;
+    grid-template-columns: 1fr;
+    box-sizing: border-box;
+}
+  .fun .card-title {
+      text-align: left;
+      margin-bottom: 30px;
   }
-  .fun-card .card-content,
-  .fun-card .card-banner {
-    width: 100%;
-    height: 300px;
-    flex-direction: row;
-    align-items: flex-end;
+  .fun .image-row {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-direction: row; /* 4 images per row mobile */
   }
-  .fun-card-1 .card-content, 
-  .fun-card-2 .card-content {
-    padding-block-end: var(--padding);
+  .fun-image {
+      width: calc(25% - 10px);
+      height: auto;
+      max-width: 100%;
   }
-  .fun .card-title{
-    color: var(--slate-blue);
-  }
+
 
   /* JOB DESKTOP*/
   .job .content-wrapper {
