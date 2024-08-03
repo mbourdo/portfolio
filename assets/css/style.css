@@ -695,7 +695,13 @@ body.nav-active { overflow: hidden; }
     width: calc(25% - 10px); /* Adjusted to ensure 4 images fit in a row */
     height: 400px;
     max-width: 100%;
-    object-fit: contain;
+    object-fit: cover;
+  }
+  .fun .paint .fun-image {
+    width: calc(25% - 10px); /* Adjusted to ensure 4 images fit in a row */
+    height: 400px;
+    max-width: 100%;
+    object-fit: contain !important;
   }
 
   /* JOB DESKTOP*/
