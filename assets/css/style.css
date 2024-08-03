@@ -680,10 +680,10 @@ body.nav-active { overflow: hidden; }
       flex-direction: row; /* 4 images per row mobile */
   }
   .fun-image {
-      width: calc(25% - 10px);
-      height: auto;
-      max-width: 100%;
-  }
+    width: 300px; 
+    height: 400px; 
+    object-fit: cover; 
+}
 
 
   /* JOB DESKTOP*/
