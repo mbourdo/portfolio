@@ -461,13 +461,32 @@ body.nav-active { overflow: hidden; }
 /*-----------------------------------*\
   #JOB PHONE
 \*-----------------------------------*/
-.job .content-wrapper {
-  flex-direction: column;
-}
-
 .image img {
-  max-width: 80%; /* Ensure images are not too large */
+  max-width: 80%; 
   height: 80%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.logo { 
+  width: 30% !important; 
+}
+.back{
+  font-size: 10px; 
+  padding: 6px 10px; 
+}
+.job-header .hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+}
+.job-body .content-wrapper {
+  display: flex;
+  align-items: center;
+  padding: var(--padding);
+  flex-direction: column;
+  padding-bottom: 30px;
 }
 
 /*-----------------------------------*\
@@ -704,13 +723,14 @@ body.nav-active { overflow: hidden; }
   }
 
   /* JOB DESKTOP*/
-  .job .content-wrapper {
+  .job-body .content-wrapper {
     display: flex;
     align-items: center;
-    gap: 40px; /* gap between text and image */
+    gap: 30px; /* gap between text and image */
     padding: var(--padding);
     margin: 20px;
     flex-direction: row;
+    padding-bottom: 20px;
   }
   .job .text {
     flex: 1;
@@ -723,6 +743,32 @@ body.nav-active { overflow: hidden; }
     height: auto;
     object-fit: cover; 
   }
+  .logo { 
+    width: 40% !important; 
+  }
+  .job-body{
+    padding-top: 10px;
+  }
+  .job-body .h2{
+    font-size: var(--fs-3);
+    padding-top: 10px;
+  }
+  .job-body .grid-list{
+    gap: 10px;
+  }
+  .job-header{
+    padding-bottom: 30px;
+    padding-left: 20px;
+  }
+  .back{
+    font-size: 12px; /* Adjust this to a smaller size if needed */
+    padding: 6px 10px; /* Reduce padding to make the button smaller */
+  }
+  .job-project{
+    background-color: var(--cultured);
+    border-radius: 10px;
+  }
+  
 
 
   /* RESUME DESKTOP*/
