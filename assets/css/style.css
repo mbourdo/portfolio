@@ -290,7 +290,9 @@ body.nav-active { overflow: hidden; }
   border-radius: 50%;
   align-items: center;
 }
-.hero-content { text-align: center; }
+.hero-content { 
+  text-align: center; 
+}
 .hero .section-text { margin-block: 24px 36px; }
 .btn-wrapper {
   display: flex;
@@ -417,6 +419,11 @@ body.nav-active { overflow: hidden; }
   gap: 5px;
   font-weight: var(--fw-700);
   transition: var(--transition-1);
+}
+.work-hero{
+  align-items: left;
+  justify-content: left;
+  text-align: left;
 }
 .work-card .btn-text:is(:hover, :focus-visible) { gap: 10px; }
 .btn-text-work {
