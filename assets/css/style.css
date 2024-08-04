@@ -475,6 +475,12 @@ body.nav-active { overflow: hidden; }
   font-size: 10px; 
   padding: 6px 10px; 
 }
+.job-header{
+  padding-bottom: 20px;
+}
+.job-body{
+  padding-top: 10px;
+}
 .job-header .hero-content {
   display: flex;
   flex-direction: column;
@@ -773,8 +779,6 @@ body.nav-active { overflow: hidden; }
     border-radius: 10px;
   }
   
-
-
   /* RESUME DESKTOP*/
   .pdf-container {
     display: flex;
