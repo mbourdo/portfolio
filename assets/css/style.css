@@ -283,11 +283,12 @@ body.nav-active { overflow: hidden; }
   -webkit-mask-size: auto;
 }
 .image-cropper {
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   position: relative;
   overflow: hidden;
   border-radius: 50%;
+  align-items: center;
 }
 .hero-content { text-align: center; }
 .hero .section-text { margin-block: 24px 36px; }
@@ -464,11 +465,11 @@ body.nav-active { overflow: hidden; }
 .image img {
   max-width: 80%; 
   height: 80%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .logo { 
-  width: 30% !important; 
+  width: 30%; 
 }
 .back{
   font-size: 10px; 
@@ -744,7 +745,7 @@ body.nav-active { overflow: hidden; }
     object-fit: cover; 
   }
   .logo { 
-    width: 40% !important; 
+    width: 40%; 
   }
   .job-body{
     padding-top: 10px;
@@ -759,6 +760,9 @@ body.nav-active { overflow: hidden; }
   .job-header{
     padding-bottom: 30px;
     padding-left: 20px;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
   }
   .back{
     font-size: 12px; /* Adjust this to a smaller size if needed */
