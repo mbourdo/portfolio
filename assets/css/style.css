@@ -502,6 +502,39 @@ body.nav-active { overflow: hidden; }
   flex-direction: column;
   padding-bottom: 30px;
 }
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+  flex-direction: row;
+  overflow-x: auto;
+}
+.skill-box {
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  padding: 10px 20px;
+  background-color: #f9f9f9;
+  color: black;
+  font-size: 14px;
+  text-align: center;
+  white-space: nowrap;
+  transition: background-color 0.3s ease;
+}
+.link-box {
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  padding: 10px 20px;
+  background-color: var(--slate-blue);
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+.link-box:hover {
+  background-color: #eee;
+  color: black;  
+}
 
 /*-----------------------------------*\
   #RESUME PHONE
