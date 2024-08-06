@@ -478,6 +478,9 @@ body.nav-active { overflow: hidden; }
 .logo { 
   width: 30%; 
 }
+.matlab-logo { 
+  width: 40%; 
+}
 .back{
   font-size: 10px; 
   padding: 6px 10px; 
@@ -792,6 +795,9 @@ body.nav-active { overflow: hidden; }
   }
   .logo { 
     width: 40%; 
+  }
+  .matlab-logo { 
+    width: 50%; 
   }
   .job-body{
     padding-top: 10px;
