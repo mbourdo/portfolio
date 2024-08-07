@@ -451,7 +451,7 @@ body.nav-active { overflow: hidden; }
   box-sizing: border-box;
   border-radius: 10px; 
 }
-.fun .image-row {
+.image-row {
     display: flex;
     gap: 10px;
     justify-content: center;
@@ -546,6 +546,14 @@ body.nav-active { overflow: hidden; }
   background-color: #eee;
   color: black;  
 }
+.matlab-image {
+  width: calc(25% - 10px); /* Adjusted to ensure 4 images fit in a row */
+  height: auto;
+  max-width: 70%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
 
 /*-----------------------------------*\
   #RESUME PHONE
@@ -615,14 +623,14 @@ body.nav-active { overflow: hidden; }
     text-align: left;
     margin-bottom: 30px;
   }
-  .fun .image-row {
+  .image-row {
     display: flex;
     gap: 10px;
     justify-content: center;
     flex-direction: row; /* 4 images per row */
     flex-wrap: wrap; /* Ensure wrapping on smaller screens */
   }
-  .fun .fun-image {
+  .fun-image {
     width: calc(25% - 10px); /* Adjusted to ensure 4 images fit in a row */
     height: 200px;
     max-width: 70%;
@@ -653,6 +661,10 @@ body.nav-active { overflow: hidden; }
   .project-card .card-banner {
     width: 100%;
     height: 300;
+  }
+  /* JOB TABLET */
+  .skills {
+    align-items: left;
   }
   /* CONTACT TABLET*/
   .contact .section-text { --fs-5: 1.8rem; }
@@ -803,14 +815,14 @@ body.nav-active { overflow: hidden; }
     text-align: left;
     margin-bottom: 30px;
   }
-  .fun .image-row {
+  .image-row {
     display: flex;
     gap: 10px;
     justify-content: center;
     flex-direction: row; /* 4 images per row */
     flex-wrap: wrap; /* Ensure wrapping on smaller screens */
   }
-  .fun .fun-image {
+  .fun-image {
     width: calc(25% - 10px); /* Adjusted to ensure 4 images fit in a row */
     height: 250px;
     max-width: 100%;
@@ -836,6 +848,7 @@ body.nav-active { overflow: hidden; }
   }
   .job .text {
     flex: 1;
+    align-items: left;
   }
   .job .image {
     flex: 1;
@@ -906,6 +919,13 @@ body.nav-active { overflow: hidden; }
   .link-box:hover {
     background-color: #eee;
     color: black;  
+  }
+  .matlab-image {
+    width: calc(25% - 10px); /* Adjusted to ensure 4 images fit in a row */
+    height: auto;
+    max-width: 70%;
+    object-fit: cover;
+    border-radius: 10px;
   }
   
   
