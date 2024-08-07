@@ -1,0 +1,396 @@
+/* #desktop.css *\
+/* CODE FOR DESKTOP LAYOUT AND STYLE */
+
+@media (min-width: 992px) {
+  :root {
+    /* spacing */
+    --section-padding: 120px;
+  }
+  /* REUSED STYLE */
+  .container { max-width: 960px; }
+  /*-----------------------------------*\
+    #HEADER AND NAV
+  \*-----------------------------------*/
+  .nav-open-btn,
+  .navbar-top,
+  .navbar .wrapper,
+  .overlay { display: none; }
+  .navbar,
+  .navbar.active {
+    all: unset;
+    display: flex;
+    flex-grow: 1;
+  }
+  .navbar-list {
+    display: flex;
+    gap: 36px;
+    margin-left: auto;
+    align-items: center;
+  }
+  .navbar-link {
+    color: var(--charcoal);
+    transition: var(--transition-1);
+  }
+  .navbar-link:is(:hover, :focus-visible) { color: var(--slate-blue); }
+  .navbar .social-link {
+    color: var(--charcoal);
+    font-size: 1.8rem;
+  }
+  .header {
+    top: 45px;
+    max-width: 960px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-inline: 16px;
+    border-radius: var(--radius-8);
+  }
+  .header.active {
+    top: 0;
+    left: 0;
+    max-width: unset;
+    border-radius: 0;
+  }
+  .hero { padding-block-start: calc(var(--section-padding) + 80px); }
+  .hero .container {
+    grid-template-columns: 0.8fr 1fr;
+    align-items: center;
+    gap: 100px;
+  }
+  .hero-content { text-align: left; }
+  .hero .btn-wrapper { justify-content: flex-start; }
+
+  /*-----------------------------------*\
+    #ABOUT
+  \*-----------------------------------*/
+  .about .wrapper {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .about .grid-list { grid-template-columns: repeat(4, 1fr); }
+
+  /* PROJECTS */
+  .project-card-1,
+  .project-card-2,
+  .project-card-3,
+  .project-card-4 {
+    flex-direction: column;
+    padding: var(--padding);
+  }
+  .project-card .card-content, 
+  .project-card .card-banner {
+    width: 100%;
+    height: 300px;
+  }
+  .project-card-1 .card-content, 
+  .project-card-2 .card-content {
+    padding-block-end: var(--padding);
+  }
+
+  /* FUN */
+  .fun .title-wrapper {
+    padding-top: 60px;
+  }
+  .fun .grid-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjusted to match project section */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .fun-item {
+    background-color: var(--cultured);
+    padding: 20px;
+    flex: 1 1 calc(33.333% - 20px); /* Ensure items stay within screen width */
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  .fun .card-title {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  .image-row {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-direction: row; /* 4 images per row */
+    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+  }
+  .fun-image {
+    width: calc(25% - 10px); /* Adjusted to ensure 4 images fit in a row */
+    height: 250px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .fun .paint .paint-image {
+    width: calc(25% - 10px); /* Adjusted to ensure 4 images fit in a row */
+    height: 400px;
+    max-width: 100%;
+    object-fit: contain !important;
+  }
+
+  /*-----------------------------------*\
+    #WORK
+  \*-----------------------------------*/
+  .work .grid-list {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+  }
+  .work-card-1,
+  .work-card-2,
+  .work-card-3,
+  .work-card-4 {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .work-card .card-content, 
+  .work-card .card-banner {
+    width: 100%;
+    height: 300px;
+  }
+  .work-card-1 .card-content, 
+  .work-card-2 .card-content {
+    padding-block-end: var(--padding);
+  }
+
+  /*-----------------------------------*\
+    #JOBS
+  \*-----------------------------------*/
+  /* Resuable format for most jobs*/
+  .job-body .content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* gap between text and image */
+    padding: var(--padding);
+    margin: 20px;
+    flex-direction: row;
+    padding-bottom: 20px;
+  }
+  .job .text {
+    flex: 1;
+    align-items: left;
+  }
+  .job .image {
+    flex: 1;
+  }
+  .job .image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+  }
+  .logo { 
+    width: 40%; 
+  }
+  .job-body{
+    padding-top: 10px;
+  }
+  .job-body .h2{
+    font-size: var(--fs-3);
+    padding-top: 10px;
+  }
+  .job-body .grid-list{
+    gap: 10px;
+  }
+  .job-header{
+    padding-bottom: 30px;
+    padding-left: 20px;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+  }
+  .back{
+    font-size: 12px; 
+    padding: 6px 10px; 
+  }
+  .job-project{
+    background-color: var(--cultured);
+    border-radius: 10px;
+  }
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: left;
+  }
+  .skill-box {
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    color: black;
+    font-size: 14px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  .link-box {
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 10px 20px;
+    background-color: var(--slate-blue);
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  .link-box:hover {
+    background-color: #eee;
+    color: black;  
+  }
+
+  /* MATLAB */
+  .matlab-image {
+    width: calc(25% - 10px); /* Adjusted to ensure 4 images fit in a row */
+    height: auto;
+    max-width: 70%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .matlab-logo { 
+    width: 50%; 
+  }
+
+  /*-----------------------------------*\
+    #RESUME
+  \*-----------------------------------*/
+  .pdf-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .pdf {
+    width: 100%;
+    max-width: 1200px; 
+    aspect-ratio: 4 / 3;
+  }
+}
+
+
+
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+/* SMALL TABLET */
+@media (min-width: 575px) {
+  /* REUSED STYLE */
+  .container {
+    max-width: 540px;
+    width: 100%;
+    margin-inline: auto;
+  }
+  /* PROJECT */
+  .project-card { --padding: 32px; }
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+  /* REUSED STYLE TABLET*/
+  .container { max-width: 720px; }
+  .section-text { --fs-5: 2rem; }
+
+  /* ABOUT TABLET*/
+  .about .grid-list { grid-template-columns: 1fr 1fr; }
+
+  /* FUN TABLET*/
+  .fun .grid-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjusted to match project section */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .fun-item {
+    background-color: var(--cultured);
+    padding: 20px;
+    flex: 1 1 calc(33.333% - 20px); /* Ensure items stay within screen width */
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  .fun .card-title {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  .image-row {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-direction: row; /* 4 images per row */
+    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+  }
+  .fun-image {
+    width: calc(25% - 10px); /* Adjusted to ensure 4 images fit in a row */
+    height: 200px;
+    max-width: 70%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .fun .paint .paint-image {
+    width: calc(25% - 10px); /* Adjusted to ensure 4 images fit in a row */
+    height: auto;
+    max-width: 70%;
+    object-fit: contain !important;
+  }
+
+  /* PROJECT TABLET*/
+  .project .title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+  .project .grid-list {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for tablets and up */
+    row-gap: 50px;
+  }
+  .project .btn { min-width: max-content; }
+
+  .project-card .card-content, 
+  .project-card .card-banner {
+    width: 100%;
+    height: 300;
+  }
+  /* JOB TABLET */
+  .skills {
+    align-items: left;
+  }
+  /* CONTACT TABLET*/
+  .contact .section-text { --fs-5: 1.8rem; }
+  .input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  /* FOOTER TABLET*/
+  .footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .copyright { margin-block-end: 0; }
+}
+
+/* LARGE SCREEN*/
+@media (min-width: 1200px) {
+  /* REUSED STYLE*/
+  .container,
+  .header { max-width: 1140px; }
+  /* ABOUT */
+  .about .grid-list { gap: 50px; }
+}
+
+/* LARGEST SCREEN*/
+@media (min-width: 1400px) {
+  /* REUSED STYLE*/
+  .container,
+  .header { max-width: 1320px; }
+  /* HERO */
+  .hero .container { grid-template-columns: 1fr 0.8fr; }
+  .hero .section-text { --fs-5: 2.4rem; }
+  /* ABOUT */
+  .about .wrapper { gap: 100px; }
+  .about .grid-list { gap: 60px; }
+}
