@@ -492,20 +492,13 @@ body.nav-active { overflow: hidden; }
 
 /* MATLAB */
 .matlab-image {
-  width: calc(25% - 10px); /* Adjusted to ensure 4 images fit in a row */
   height: auto;
-  max-width: 80%;
+  width: 60%;
   object-fit: cover;
   border-radius: 10px;
 }
 .matlab-logo { 
   width: 40%; 
-}
-.matlab .image-row {
-  display: grid;
-  gap: 10px;
-  justify-content: center;
-  grid-template-columns: repeat(2, 1fr); /* 2 images per row */
 }
 
 
