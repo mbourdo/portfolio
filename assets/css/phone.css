@@ -450,7 +450,7 @@ body.nav-active { overflow: hidden; }
 }
 .job-body .content-wrapper {
   display: flex;
-  align-items: center;
+  align-items: left;
   padding: var(--padding);
   flex-direction: column;
   padding-bottom: 30px;
@@ -493,14 +493,30 @@ body.nav-active { overflow: hidden; }
 /* MATLAB */
 .matlab-image {
   height: auto;
-  width: 60%;
+  width: 50%;
   object-fit: cover;
   border-radius: 10px;
 }
 .matlab-logo { 
   width: 40%; 
 }
-
+.blue-text{
+  color: var(--slate-blue);
+}
+/* NOTOVOX */
+.notovox-image{
+  height: auto;
+  width: 50%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+/* IDC */
+.idc-image{
+  height: auto;
+  width: 50%;
+  object-fit: cover;
+  border-radius: 10px;
+}
 
 /*-----------------------------------*\
   #RESUME 
