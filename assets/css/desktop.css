@@ -59,6 +59,12 @@
   .hero-content { text-align: left; }
   .hero .btn-wrapper { justify-content: flex-start; }
 
+  .hero-full-page .container {
+    grid-template-columns: 1fr; /* Change to a single column */
+    text-align: center; /* Optional: center the text */
+    gap: 0; /* Optional: remove gap if not needed */
+  }
+
   /*-----------------------------------*\
     #ABOUT
   \*-----------------------------------*/
