@@ -44,6 +44,10 @@
     padding-inline: 16px;
     border-radius: var(--radius-8);
   }
+  .headerMB{
+    font-size: var(--fs-4); 
+    color: var(--gunmetal);
+  }
   .header.active {
     top: 0;
     left: 0;
