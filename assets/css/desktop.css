@@ -58,7 +58,7 @@
   .hero .container {
     grid-template-columns: 0.8fr 1fr;
     align-items: center;
-    gap: 100px;
+    gap: 70px;
   }
   .hero-content { text-align: left; }
   .hero .btn-wrapper { justify-content: flex-start; }
