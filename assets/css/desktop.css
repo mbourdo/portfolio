@@ -68,6 +68,14 @@
     text-align: center; /* Optional: center the text */
     gap: 0; /* Optional: remove gap if not needed */
   }
+  .hero-title {
+  font-size: var(--fs-3); 
+  }
+
+  .section-text {
+    font-size: var(--fs-4); 
+  }
+
 
   /*-----------------------------------*\
     #ABOUT
@@ -287,8 +295,7 @@
     object-fit: cover;
     border-radius: 10px;
   }
-  
-  
+
   /*-----------------------------------*\
     #RESUME
   \*-----------------------------------*/
@@ -303,9 +310,6 @@
     aspect-ratio: 4 / 3;
   }
 }
-
-
-
 
 /*-----------------------------------*\
   #MEDIA QUERIES
@@ -350,6 +354,7 @@
   .fun .card-title {
     text-align: left;
     margin-bottom: 30px;
+    font-size: var( --fs-3);
   }
   .image-row {
     display: flex;
